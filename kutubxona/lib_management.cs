@@ -8,11 +8,12 @@ namespace Library_management
 {
     public  class lib_management_core
     {
-        public Library_store Store { get; set; }
         public lib_management_core()
         {
             Store = new Library_store();
         }
+        public Library_store Store { get; set; }
+        
         public lib_management_core(List<Book> books, List<User> users)
         {
             Store = new Library_store(books, users);
