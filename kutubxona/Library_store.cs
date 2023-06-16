@@ -13,8 +13,8 @@ namespace Library_management
 
         public Library_store() 
         {
-            Books = new List<Book>;
-            Users = new List<User>;
+            Books = new List<Book>();
+            Users = new List<User>();
         }
         public Library_store(List<Book> books, List<User> users) 
         {
