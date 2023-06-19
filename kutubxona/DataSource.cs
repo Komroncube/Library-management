@@ -101,18 +101,18 @@ public static class DataSource
     static DataSource()
     {
         var booksIndex = 0;
-        for (var index = 0; index < 20; index++)
+        for (var index = 0; index < Users.Count; index++)
         {
             if (index % 4 == 0)
                 continue;
 
-            if (booksIndex == Books.Count - 1)
-                break;
+            if (booksIndex % 4 == 0)
+                if (booksIndex + 1 == Books.Count - 1)
+                    break;
+                else
+                    booksIndex++;
 
-            do
-            {
-                Books[index].ReaderId = Users[index].Id;
-            } while (booksIndex % 3 != 0);
+            Books[booksIndex++].ReaderId = Users[index].Id;
         }
     }
 }
