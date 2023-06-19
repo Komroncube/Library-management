@@ -8,26 +8,29 @@ namespace Library_management
 {
     public class Book
     {
-        public Guid ID { get; set; }
+        public Guid Id { get; set; }
         public string Name { get; set; }
-        
+        public string Description { get; set; }
         public string Author { get; set; }
         public string Category { get; set; }
-        public Guid? ReaderID { get; set; }
-        public Book(string name, string author)
+        public Guid? ReaderId { get; set; }
+
+        public Book(string name, string author, string description, string category)
         {
-            ID= Guid.NewGuid();
-            Name=name;
+            Id = Guid.NewGuid();
+            Name = name;
             Author = author;
-            //ReaderID=Guid.NewGuid();
+            Description = description;
+            Category = category;
         }
+
         public override string ToString()
         {
             return $"Kitob" +
-                $"\nid: {ID}"+
-                $"\nnomi: {Name}"+
-                $"\nMuallif: {Author}" +
-                $"\nKim o'qiyapti {ReaderID}";
+                $"\n id : {Id}, " +
+                $"\n nomi : {Name}, " +
+                $"\n muallifi : {Author}" +
+                $"\n kim o'qiyapti : {ReaderId}\n";
         }
     }
 }
