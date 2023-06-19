@@ -6,19 +6,20 @@ using System.Threading.Tasks;
 
 namespace Library_management
 {
-    public  class lib_management_core
+    public abstract class lib_management_core
     {
         public lib_management_core()
         {
             Store = new Library_store();
         }
-        public Library_store Store { get; set; }
-        
         public lib_management_core(List<Book> books, List<User> users)
         {
             Store = new Library_store(books, users);
-            
+
         }
+        public Library_store Store { get; set; }
+        
+        
         public void DisplayAllUsers()
         {
             foreach (User user in Store.Users)
