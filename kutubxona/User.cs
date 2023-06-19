@@ -26,7 +26,7 @@ namespace Library_management
         }
         public override string ToString()
         {
-            return $"Kitob" +
+            return $"User   " +
             $"\nid: {Id}" +
                 $"\nFirstName: {FirstName}" +
                 $"\nNLastName: {LastName}" +
