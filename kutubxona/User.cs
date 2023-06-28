@@ -12,7 +12,7 @@ namespace Library_management
         public Guid Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public string UserName { get; set; }
+        public string Email { get; set; }
 
         private User(string firstName, string lastName)
         {
@@ -20,17 +20,17 @@ namespace Library_management
             FirstName = firstName;
             LastName = lastName;
         }
-        public User(string firstName, string lastName, string username):this(firstName, lastName)
+        public User(string firstName, string lastName, string email):this(firstName, lastName)
         {
-            UserName= username;
+            Email= email;
         }
         public override string ToString()
         {
             return $"User   " +
             $"\nid: {Id}" +
-                $"\nFirstName: {FirstName}" +
-                $"\nNLastName: {LastName}" +
-                $"\nUserName: {UserName}";
+            $"\nFirstName: {FirstName}" +
+            $"\nNLastName: {LastName}" +
+            $"\nUserName: {Email}";
         }
     }
 }
