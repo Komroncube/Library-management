@@ -30,6 +30,7 @@ namespace Library_management
                 $"\n id : {Id}, " +
                 $"\n nomi : {Name}, " +
                 $"\n muallifi : {Author}" +
+                $"\n ta'rifi : {Description}" +
                 $"\n kim o'qiyapti : {ReaderId}\n";
         }
     }
