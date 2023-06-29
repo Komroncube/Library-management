@@ -14,4 +14,10 @@
 //    var command = Console.ReadLine();
 //}
 
-using LibraryManagement;
+
+//var emailservice = new EmailService();
+//emailservice.SendEmail("komronabdujabbor@gmail.com");
+
+var librarymanagement = new LibraryManagement();
+librarymanagement.RegisterUser("Kamronbek", "Abdujabborov", "komronabdujabbor@gmail.com");
+librarymanagement.DisplayAllBooks();
