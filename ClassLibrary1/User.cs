@@ -8,13 +8,17 @@ namespace ClassLibrary1
 {
     public class User : Person
     {
+        
         public User(int age, string name, int money):base(age, name)
         {
             Money = money;
         }
-        public User(int age, string name) : base(age, name)
+        public User(int age, string name)
         {
+            Age = age;
+            Name = name;
         }
+        //public User(int age, string name) : base(age, name) { }
 
         public int Money { get; set; }
         public void Show()

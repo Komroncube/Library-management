@@ -8,6 +8,7 @@ namespace ClassLibrary1
 {
     public class Person
     {
+        public Person() { }
         public Person(int age, string name) 
         {
             this.Age = age;

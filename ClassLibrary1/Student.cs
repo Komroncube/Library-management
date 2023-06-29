@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary1
 {
-    public class Student : Person
+    public class Student : User
     {
         public Student(int age, string name) : base(age, name)
         {
